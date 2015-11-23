@@ -1,0 +1,128 @@
+    1  ruby -v
+    2  cd hw-sinatra-saas-hangperson/
+    3  ls
+    4  git init
+    5  ls
+    6  more app.rb
+    7  more Gemfile
+    8  bundle show
+    9  git add -A
+   10  git commit -am "set up the Gemfile"
+   11  mkdir testapp
+   12  cd testapp
+   13  git init
+   14  vi Gemfile
+   15  bundle
+   16  more Gemfile.lock 
+   17  git commit -am "set up the Gemfile"
+   18  vim app.rb
+   19  vim config.ru
+   20  ...bash
+   21  more ../config.ru 
+   22  vi config.ru 
+   23  vi app.rb 
+   24  rackup -p $PORT -o $IP
+   25  git status
+   26  git add app.rb config.ru 
+   27  history
+   28  git commit -am "hello world"
+   29  vim app.rb 
+   30  vim Gemfile
+   31  bundle
+   32  rackup -p $PORT -o $IP
+   33  rerun "rackup -p $PORT -o $IP"
+   34  cd
+   35  pwd
+   36  ls
+   37  cd workspace
+   38  wget -O- https://toolbelt.heroku.com/install-ubuntu.sh |sh
+   39  pwd
+   40  cd hw-sinatra-saas-hangperson/
+   41  cd testapp
+   42  heroku create
+   43  git status
+   44  git add Gemfile Gemfile.lock 
+   45  git commit -am "Added Gem"
+   46  git push heroku master
+   47  history
+   48  cd ..
+   49  ls
+   50  rackup -p $PORT -o $IP
+   51  ls lib
+   52  ls
+   53  cd lib
+   54  vi hangperson_game.rb 
+   55  cd ..
+   56  ls
+   57  git status
+   58  git add -A
+   59  git commit -am "finished lib/hangerson_game.rb edits"
+   60  git push master
+   61  history
+   62  history > history_hangperson_7Nov15
+   63  vim app.rb 
+   64  bundle install
+   65  heroku login
+   66  heroku create
+   67  git push heroku master
+   68  ls views/
+   69  more new.erb
+   70  more views/new.erb
+   71  more views/show.erb 
+   72  git add -A
+   73  git commit -am "First cucumber step"
+   74  git push heroku master
+   75  ls
+   76  more lib/hangperson_game.rb 
+   77  less lib/hangperson_game.rb 
+   78  git add -A
+   79  git commit -am "Finished basic functions"
+   80  git push heroku master
+   81  ls
+   82  ls features/
+   83  ls features/step_definitions/
+   84  more features/step_definitions//game*
+   85  more views/new.erb 
+   86  curl --data '' http://cs169-1x-abeckman/c9.io/create
+   87  curl --data '' http://cs169-1x-abeckman.c9.io/create
+   88  curl --data '' http://cs169-1x-abeckman.c9.io/banana
+   89  curl --data '' http://cs169-1x-abeckman.c9.io/create, {:word => word}
+   90  man curl
+   91  curl --data 'word=foo' http://cs169-1x-abeckman.c9.io/create, {:word => word}
+   92  curl --data word=foo http://cs169-1x-abeckman.c9.io/create, {:word => word}
+   93  man curl
+   94  curl '--data word=foo' http://cs169-1x-abeckman.c9.io/create, {:word => word}
+   95  curl '--data word=foo' http://cs169-1x-abeckman.c9.io/create
+   96  curl '-d word=foo' http://cs169-1x-abeckman.c9.io/create
+   97  ls
+   98  more lib/hangperson_game.rb 
+   99  git add -A
+  100  git commit -am "shortcut to fix errors"
+  101  git commit -am "shortcut to fix errors" push
+  102  git push heroku master
+  103  git add -A
+  104  git commit -am "more errors"
+  105  git push heroku master
+  106  git add -A
+  107  git commit -am "protect win/lose"
+  108  git push heroku master
+  109  more views/new.erb 
+  110  git add -A
+  111  git commit -am "more protect win/lose"
+  112  git push heroku master
+  113  git add -A
+  114  git commit -am "fix rescue code"
+  115  git push heroku master
+  116  rails --version
+  117  ruby --version
+  118  cd ..
+  119  ls
+  120  grep git history_7Oct15 
+  121  git clone git@github.com:abeckman/hw-rails-intro.git
+  122  cd hw-rails-intro/
+  123  ls
+  124  ls -l
+  125  more README.md 
+  126  cd ../hw-sin
+  127  cd ../hw-sinatra-saas-hangperson/
+  128  history > history_9Nov15
